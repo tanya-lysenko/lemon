@@ -1,0 +1,34 @@
+@mixin layout-inner ($width) {
+  position: relative;
+
+  @media (min-width: $width + 22px) {
+    margin: 0 auto;
+    width: $width;
+  }
+
+  @media (max-width: $width + 21px) {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+@mixin layout ($width, $class:null) {
+  @if ($class == null) {
+    .layout {
+      @include layout-inner($width);
+    }
+  }
+  @else {
+    .layout.#{$class} {
+      @include layout-inner($width);
+    }
+  }
+}
+
+@mixin chi-chi-card {
+  display: block;
+  padding: 26px 16px;
+  box-shadow: 0 0 13px rgba(11, 12, 12, 0.15);
+  background-color: #f8f8f8;
+  margin-bottom: 50px;
+}

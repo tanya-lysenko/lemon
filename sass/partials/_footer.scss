@@ -1,0 +1,119 @@
+#footer {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  background-color: #2f2f2f;
+  padding: 70px 0 47px;
+
+  @media (max-width: 1093px) {
+    padding-top: 47px;
+  }
+
+  .flex-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+
+    @media (max-width: 1093px) {
+      flex-direction: column;
+    }
+
+    .logo {
+      display: block;
+      height: 36px;
+      width: 90px;
+      margin-right: 80px;
+
+      @media (max-width: 1093px) {
+        margin-bottom: 20px;
+        margin-right: 0;
+      }
+
+      img {
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    nav {
+      display: block;
+      overflow: hidden;
+
+      @media (max-width: 1093px) {
+        margin-bottom: 20px;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        overflow: hidden;
+
+        @media (max-width: 562px) {
+          flex-direction: column;
+        }
+
+        li {
+          display: block;
+          margin: 8px;
+
+          a {
+            display: block;
+            line-height: 14px;
+            font-size: 14px;
+            font-family: "Arial", sans-serif;
+            color: #acacac;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+
+            &:hover, &:active {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    .copy {
+      display: block;
+      line-height: 12px;
+      font-size: 12px;
+      font-family: "Arial", sans-serif;
+      color: #7D7D7D;
+      letter-spacing: 1px;
+
+      @media (max-width: 1093px) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .social {
+    display: block;
+    text-align: right;
+
+    @media (max-width: 1093px) {
+      text-align: center;
+    }
+
+    a {
+      display: inline;
+      margin-right: 10px;
+      color: #555555;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover, &:active {
+        color: #fff;
+      }
+    }
+  }
+}
