@@ -82,6 +82,10 @@
       line-height: 26px;
       border: 1px solid #c2c2c2;
 
+      &:hover {
+        border-color: #000000;
+      }
+
       @media (max-width: 1073px) {
         margin: 0 auto;
       }

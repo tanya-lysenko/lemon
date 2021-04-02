@@ -2,9 +2,8 @@
   "name": "lemon",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "portfolio": "gulp"
+    "test": "gulp"
   },
   "author": "",
   "license": "MIT",

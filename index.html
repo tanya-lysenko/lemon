@@ -17,9 +17,14 @@
                 </div>
             </section>
             <section class="bottom">
-                <a href="#" class="logo">
-                    <img src="./images/lem-small.png" alt="lem">
-                </a>
+                <div class="logo-wrap">
+                    <a href="#" class="logo">
+                        <img src="./images/lem-small.png" alt="lem">
+                    </a>
+                </div>
+                <span class="menu">
+                    Menu
+                </span>
                 <nav>
                     <ul>
                         <li>
@@ -27,8 +32,8 @@
                                 home
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
+                        <li class="submenu-list">
+                            <a href="#" class="submenu">
                                 recipes
                             </a>
                             <ul>
@@ -39,10 +44,17 @@
                                 <li><a href="#">newest</a></li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="#">
+                        <li class="submenu-list">
+                            <a href="#" class="submenu">
                                 photo galleries
                             </a>
+                            <ul>
+                                <li><a href="#">recommended</a></li>
+                                <li><a href="#">popular</a></li>
+                                <li><a href="#">quick & easy</a></li>
+                                <li><a href="#">healthy</a></li>
+                                <li><a href="#">newest</a></li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#">
@@ -55,10 +67,12 @@
                         </li>
                     </ul>
                 </nav>
-                <a href="#" class="search">
-                    <img src="./images/dandruff.png" alt="dandruff">
-                    find a recipe
-                </a>
+                <div class="search-wrap">
+                    <a href="#" class="search">
+                        <img src="./images/dandruff.png" alt="dandruff">
+                        find a recipe
+                    </a>
+                </div>
             </section>
         </div>
     </header>
@@ -89,7 +103,7 @@
                                 <img src="./images/1.png" alt="1">
                             </div>
                             <p>
-                                Raspberry & Cream Frozen Yogurt Pie
+                                <a href="#">Raspberry & Cream Frozen Yogurt Pie</a>
                             </p>
                             <div class="info">
                                 <img src="./images/clock.png" alt="clock">
@@ -105,7 +119,7 @@
                                 <img src="./images/2.png" alt="2">
                             </div>
                             <p>
-                                Giant Ice Cream Sandwich
+                                <a href="#">Giant Ice Cream Sandwich</a>
                             </p>
                             <div class="info">
                                 <img src="./images/clock.png" alt="clock">
@@ -121,7 +135,7 @@
                                 <img src="./images/3.png" alt="3">
                             </div>
                             <p>
-                                Dark Chocolate Crunch Ice Cream Sandwich Cake
+                                <a href="#">Dark Chocolate Crunch Ice Cream Sandwich Cake</a>
                             </p>
                             <div class="info">
                                 <img src="./images/clock.png" alt="clock">
@@ -247,7 +261,7 @@
     </footer>
 </div>
 
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/main.js?ver=1576953978203"></script>
+<script src="js/main.js"></script>
+<script src="js/menu.js"></script>
 </body>
 </html>
